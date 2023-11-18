@@ -9,13 +9,13 @@ class Musician:
         self.name = name
         self.instruments = []
 
-    def __repr__(self):
+    def __str__(self):
         """Return a string representation of a Musician."""
         return f"{self.name} ({self.instruments})"
 
-    # def __repr__(self):
-    #     """Return a string representation of a Musician, showing the variables."""
-    #     return str(vars(self))
+    def __repr__(self):
+        """Return a string representation of a Musician, showing the variables."""
+        return str(vars(self))
 
     def add(self, instrument):
         """Add an instrument to musician's collection."""

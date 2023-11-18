@@ -11,11 +11,8 @@ class Band:
         self.musicians = []
 
     def __repr__(self):
+        """"""
         return f"{self.name} ({','.join([str(musician) for musician in self.musicians])})"
-
-    # def __repr__(self):
-    #     """"""
-    #     return str(vars(self))
 
     def add(self, musician):
         """"""
@@ -23,5 +20,5 @@ class Band:
 
     def play(self):
         """"""
-        for musician in self.musicians:
-            print(musician.play())
+        return '\n'.join([musician.play() for musician in self.musicians])
+
